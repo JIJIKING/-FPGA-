@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug  1 16:26:08 2020
+# Process ID: 392
+# Current directory: D:/verilog_docs/HDMI_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6068 D:\verilog_docs\HDMI_Demo\HDMI_Demo.xpr
+# Log file: D:/verilog_docs/HDMI_Demo/vivado.log
+# Journal file: D:/verilog_docs/HDMI_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verilog_docs/HDMI_Demo/HDMI_Demo.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/Fanxin_meng/Desktop/500_win.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/Fanxin_meng/Desktop/500_win.coe
+export_ip_user_files -of_objects  [get_files c:/Users/Fanxin_meng/Desktop/SEU_Picture_1_Rom.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/Fanxin_meng/Desktop/SEU_Picture_1_Rom.coe
+set_property -dict [list CONFIG.Coe_File {D:/verilog_docs/HDMI_Demo/SEU_Picture_5_Rom.coe}] [get_ips Picture_G_Rom]
+generate_target all [get_files  D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci]
+catch { config_ip_cache -export [get_ips -all Picture_G_Rom] }
+export_ip_user_files -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci] -no_script -sync -force -quiet
+reset_run Picture_G_Rom_synth_1
+launch_runs -jobs 4 Picture_G_Rom_synth_1
+export_simulation -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files D:/verilog_docs/HDMI_Demo/SEU_Picture_2_Rom.coe] -no_script -reset -force -quiet
+remove_files  D:/verilog_docs/HDMI_Demo/SEU_Picture_2_Rom.coe
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug  1 12:12:32 2020
+# Process ID: 9432
+# Current directory: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_R_Rom_synth_1
+# Command line: vivado.exe -log Picture_R_Rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Picture_R_Rom.tcl
+# Log file: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_R_Rom_synth_1/Picture_R_Rom.vds
+# Journal file: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_R_Rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Picture_R_Rom.tcl -notrace

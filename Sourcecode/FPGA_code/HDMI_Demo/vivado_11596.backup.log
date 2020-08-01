@@ -1,0 +1,1082 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jul 24 11:47:09 2020
+# Process ID: 11596
+# Current directory: D:/verilog_docs/HDMI_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4004 D:\verilog_docs\HDMI_Demo\HDMI_Demo.xpr
+# Log file: D:/verilog_docs/HDMI_Demo/vivado.log
+# Journal file: D:/verilog_docs/HDMI_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verilog_docs/HDMI_Demo/HDMI_Demo.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/Fanxin_meng/Desktop/100.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/RGB2DVI_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/FPGA_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'd:/verilog_docs/RGB2DVI_IP' will take precedence over the same IP in location d:/verilog_docs/FPGA_IP/Mini-HDMI-IP/IP/RGB2DVI_IP
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 858.148 ; gain = 174.281
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Picture_B_Rom'...
+ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
+ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'd:/xilinx_2019/Vivado/2019.1/data/ip/xilinx/blk_mem_gen_v8_4/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'Picture_B_Rom'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'Picture_B_Rom'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+export_ip_user_files -of_objects  [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/lab_10.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/lab_10.xdc
+generate_target all [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Picture_B_Rom'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci]
+generate_target all [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci]
+generate_target all [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.xci]
+launch_runs Picture_B_Rom_synth_1
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Picture_B_Rom, cache-ID = c05f7174fc66fa1e; cache size = 0.661 MB.
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+[Fri Jul 24 11:51:47 2020] Launched Picture_B_Rom_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_B_Rom_synth_1/runme.log
+wait_on_run Picture_B_Rom_synth_1
+[Fri Jul 24 11:51:47 2020] Waiting for Picture_B_Rom_synth_1 to finish...
+[Fri Jul 24 11:51:52 2020] Waiting for Picture_B_Rom_synth_1 to finish...
+[Fri Jul 24 11:51:57 2020] Waiting for Picture_B_Rom_synth_1 to finish...
+
+*** Running vivado
+    with args -log Picture_B_Rom.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Picture_B_Rom.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Picture_B_Rom.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/RGB2DVI_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/FPGA_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'd:/verilog_docs/RGB2DVI_IP' will take precedence over the same IP in location d:/verilog_docs/FPGA_IP/Mini-HDMI-IP/IP/RGB2DVI_IP
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Picture_B_Rom, cache-ID = c05f7174fc66fa1e.
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 24 11:51:54 2020...
+[Fri Jul 24 11:51:57 2020] Picture_B_Rom_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 933.492 ; gain = 0.000
+launch_runs Picture_G_Rom_synth_1
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'Picture_G_Rom'. Target already exists and is up to date.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Picture_G_Rom, cache-ID = c05f7174fc66fa1e; cache size = 0.661 MB.
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci' is already up-to-date
+[Fri Jul 24 11:51:58 2020] Launched Picture_G_Rom_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_G_Rom_synth_1/runme.log
+wait_on_run Picture_G_Rom_synth_1
+[Fri Jul 24 11:51:58 2020] Waiting for Picture_G_Rom_synth_1 to finish...
+[Fri Jul 24 11:52:04 2020] Waiting for Picture_G_Rom_synth_1 to finish...
+[Fri Jul 24 11:52:09 2020] Waiting for Picture_G_Rom_synth_1 to finish...
+
+*** Running vivado
+    with args -log Picture_G_Rom.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Picture_G_Rom.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Picture_G_Rom.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/RGB2DVI_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/FPGA_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'd:/verilog_docs/RGB2DVI_IP' will take precedence over the same IP in location d:/verilog_docs/FPGA_IP/Mini-HDMI-IP/IP/RGB2DVI_IP
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Picture_G_Rom, cache-ID = c05f7174fc66fa1e.
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 24 11:52:06 2020...
+[Fri Jul 24 11:52:09 2020] Picture_G_Rom_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 953.680 ; gain = 20.188
+launch_runs Picture_R_Rom_synth_1
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'Picture_R_Rom'. Target already exists and is up to date.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Picture_R_Rom, cache-ID = c05f7174fc66fa1e; cache size = 0.661 MB.
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.xci' is already up-to-date
+[Fri Jul 24 11:52:10 2020] Launched Picture_R_Rom_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_R_Rom_synth_1/runme.log
+wait_on_run Picture_R_Rom_synth_1
+[Fri Jul 24 11:52:10 2020] Waiting for Picture_R_Rom_synth_1 to finish...
+[Fri Jul 24 11:52:15 2020] Waiting for Picture_R_Rom_synth_1 to finish...
+[Fri Jul 24 11:52:20 2020] Waiting for Picture_R_Rom_synth_1 to finish...
+
+*** Running vivado
+    with args -log Picture_R_Rom.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Picture_R_Rom.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Picture_R_Rom.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/RGB2DVI_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/FPGA_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'd:/verilog_docs/RGB2DVI_IP' will take precedence over the same IP in location d:/verilog_docs/FPGA_IP/Mini-HDMI-IP/IP/RGB2DVI_IP
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Picture_R_Rom, cache-ID = c05f7174fc66fa1e.
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 24 11:52:17 2020...
+[Fri Jul 24 11:52:20 2020] Picture_R_Rom_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 953.680 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tfgg484-2
+Top: Lab_10
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1316.094 ; gain = 171.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Lab_10' [D:/verilog_docs/lab_9_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (2#1) [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'drive' [D:/verilog_docs/HDMI_drive.v:5]
+	Parameter H_ACTIVE_1280_720 bound to: 16'b0000010100000000 
+	Parameter H_FP_1280_720 bound to: 16'b0000000001101110 
+	Parameter H_SYNC_1280_720 bound to: 16'b0000000000101000 
+	Parameter H_BP_1280_720 bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE_1280_720 bound to: 16'b0000001011010000 
+	Parameter V_FP_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_SYNC_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_BP_1280_720 bound to: 16'b0000000000010100 
+	Parameter H_TOTAL_1280_720 bound to: 16'b0000011001110010 
+	Parameter V_TOTAL_1280_720 bound to: 16'b0000001011101110 
+	Parameter H_ACTIVE_1920_1080 bound to: 16'b0000011110000000 
+	Parameter H_FP_1920_1080 bound to: 16'b0000000001011000 
+	Parameter H_SYNC_1920_1080 bound to: 16'b0000000000101100 
+	Parameter H_BP_1920_1080 bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE_1920_1080 bound to: 16'b0000010000111000 
+	Parameter V_FP_1920_1080 bound to: 16'b0000000000000100 
+	Parameter V_SYNC_1920_1080 bound to: 16'b0000000000000101 
+	Parameter V_BP_1920_1080 bound to: 16'b0000000000100100 
+	Parameter H_TOTAL_1920_1080 bound to: 16'b0000100010011000 
+	Parameter V_TOTAL_1920_1080 bound to: 16'b0000010001100101 
+INFO: [Synth 8-6155] done synthesizing module 'drive' (3#1) [D:/verilog_docs/HDMI_drive.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Video_Generator' [D:/verilog_docs/Video_Generator.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Picture_R_Rom' [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/Picture_R_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Picture_R_Rom' (4#1) [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/Picture_R_Rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Picture_G_Rom' [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/Picture_G_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Picture_G_Rom' (5#1) [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/Picture_G_Rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Picture_B_Rom' [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/Picture_B_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Picture_B_Rom' (6#1) [D:/verilog_docs/HDMI_Demo/.Xil/Vivado-11596-LAPTOP-6PEOUARA/realtime/Picture_B_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Video_Generator' (7#1) [D:/verilog_docs/Video_Generator.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Lab_10' (8#1) [D:/verilog_docs/lab_9_top.v:1]
+WARNING: [Synth 8-3331] design Video_Generator has unconnected port RGB_VDE
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1359.266 ; gain = 214.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1359.266 ; gain = 214.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1359.266 ; gain = 214.207
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.dcp' for cell 'clk_10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.dcp' for cell 'Video_Generator0/R_ROM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.dcp' for cell 'Video_Generator0/G_ROM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.dcp' for cell 'Video_Generator0/B_ROM'
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'clk_10/inst'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'clk_10/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab_10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Lab_10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1477.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1508.895 ; gain = 363.836
+30 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1508.895 ; gain = 555.215
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_runs synth_1 -jobs 4
+[Fri Jul 24 13:11:34 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tfgg484-2
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.dcp' for cell 'clk_10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.dcp' for cell 'Video_Generator0/B_ROM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.dcp' for cell 'Video_Generator0/G_ROM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.dcp' for cell 'Video_Generator0/R_ROM'
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'clk_10/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2048.609 ; gain = 461.055
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'clk_10/inst'
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2048.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2064.301 ; gain = 476.746
+place_ports clk_100MHz Y18
+place_ports TMDS_Tx_Clk_P E1
+place_ports {TMDS_Tx_Data_P[0]} G1
+place_ports {TMDS_Tx_Data_P[1]} H2
+place_ports {TMDS_Tx_Data_P[2]} K1
+set_property IOSTANDARD LVCMOS18 [get_ports [list clk_100MHz]]
+close [ open D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/hdmi.xdc w ]
+add_files -fileset constrs_1 D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/hdmi.xdc
+set_property target_constrs_file D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/hdmi.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 13:16:54 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 13:16:54 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+export_ip_user_files -of_objects  [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset rgb2dvi_0 D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
+INFO: [Project 1-386] Moving file 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' from fileset 'rgb2dvi_0' to fileset 'sources_1'.
+create_ip -name rgb2dvi -vendor digilentinc.com -library ip -version 1.2 -module_name rgb2dvi_0 -dir d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip
+set_property -dict [list CONFIG.kClkPrimitive {PLL}] [get_ips rgb2dvi_0]
+generate_target {instantiation_template} [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rgb2dvi_0'...
+generate_target all [get_files  d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rgb2dvi_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'rgb2dvi_0'...
+catch { config_ip_cache -export [get_ips -all rgb2dvi_0] }
+export_ip_user_files -of_objects [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci]
+launch_runs -jobs 4 rgb2dvi_0_synth_1
+[Fri Jul 24 13:26:09 2020] Launched rgb2dvi_0_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/rgb2dvi_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.500} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {59} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10} CONFIG.CLKOUT1_JITTER {139.423} CONFIG.CLKOUT1_PHASE_ERROR {220.889}] [get_ips clk_wiz_0]
+generate_target all [get_files  D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Fri Jul 24 13:32:25 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 13:32:42 2020] Launched clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/clk_wiz_0_synth_1/runme.log
+synth_1: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 13:32:42 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset clk_wiz_0 D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
+INFO: [Project 1-386] Moving file 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.PRIM_IN_FREQ {50.000} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.500} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {59} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10} CONFIG.CLKOUT1_JITTER {139.423} CONFIG.CLKOUT1_PHASE_ERROR {220.889}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP clk_wiz_0, cache-ID = ed8aab3eada93375; cache size = 1.032 MB.
+export_ip_user_files -of_objects [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci'
+export_simulation -of_objects [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+[Fri Jul 24 13:43:15 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+set_property -dict [list CONFIG.kClkPrimitive {MMCM}] [get_ips rgb2dvi_0]
+generate_target all [get_files  d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rgb2dvi_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rgb2dvi_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'rgb2dvi_0'...
+catch { config_ip_cache -export [get_ips -all rgb2dvi_0] }
+export_ip_user_files -of_objects [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci] -no_script -sync -force -quiet
+reset_run rgb2dvi_0_synth_1
+launch_runs -jobs 4 rgb2dvi_0_synth_1
+[Fri Jul 24 13:46:51 2020] Launched rgb2dvi_0_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/rgb2dvi_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 13:47:08 2020] Launched rgb2dvi_0_synth_1, synth_1...
+Run output will be captured here:
+rgb2dvi_0_synth_1: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/rgb2dvi_0_synth_1/runme.log
+synth_1: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 13:47:08 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property -dict [list CONFIG.kRstActiveHigh {false}] [get_ips rgb2dvi_0]
+generate_target all [get_files  d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rgb2dvi_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rgb2dvi_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'rgb2dvi_0'...
+catch { config_ip_cache -export [get_ips -all rgb2dvi_0] }
+export_ip_user_files -of_objects [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci] -no_script -sync -force -quiet
+reset_run rgb2dvi_0_synth_1
+launch_runs -jobs 4 rgb2dvi_0_synth_1
+[Fri Jul 24 13:50:11 2020] Launched rgb2dvi_0_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/rgb2dvi_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 13:50:21 2020] Launched rgb2dvi_0_synth_1, synth_1...
+Run output will be captured here:
+rgb2dvi_0_synth_1: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/rgb2dvi_0_synth_1/runme.log
+synth_1: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 13:50:21 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+[Fri Jul 24 14:32:26 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tfgg484-2
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.dcp' for cell 'clk_10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.dcp' for cell 'rgb2dvi'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.dcp' for cell 'Video_Generator0/B_ROM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.dcp' for cell 'Video_Generator0/G_ROM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.dcp' for cell 'Video_Generator0/R_ROM'
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xdc] for cell 'clk_10/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xdc] for cell 'clk_10/inst'
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Parsing XDC File [D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/hdmi.xdc]
+Finished Parsing XDC File [D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/hdmi.xdc]
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3452.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_project D:/verilog_docs/IP_TEST/IP_TEST.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2019/Vivado/2019.1/data/ip'.
+current_project HDMI_Demo
+close_project
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/verilog_docs/HDMI_Demo/HDMI_Demo.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 109.363 ; gain = 17.813
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 24 15:40:07 2020...
+close_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 3541.922 ; gain = 12.203
+update_compile_order -fileset sources_1
+close_project
+open_project D:/verilog_docs/HDMI_Demo/HDMI_Demo.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/RGB2DVI_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/FPGA_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'd:/verilog_docs/RGB2DVI_IP' will take precedence over the same IP in location d:/verilog_docs/FPGA_IP/Mini-HDMI-IP/IP/RGB2DVI_IP
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {40000} CONFIG.Coe_File {C:/Users/Fanxin_meng/Desktop/200.coe}] [get_ips Picture_R_Rom]
+generate_target all [get_files  D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Picture_R_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Picture_R_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Picture_R_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Picture_R_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Picture_R_Rom'...
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3541.922 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all Picture_R_Rom] }
+export_ip_user_files -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.xci] -no_script -sync -force -quiet
+reset_run Picture_R_Rom_synth_1
+launch_runs -jobs 4 Picture_R_Rom_synth_1
+[Fri Jul 24 15:56:06 2020] Launched Picture_R_Rom_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_R_Rom_synth_1/runme.log
+export_simulation -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {40000} CONFIG.Coe_File {C:/Users/Fanxin_meng/Desktop/200.coe}] [get_ips Picture_G_Rom]
+generate_target all [get_files  D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Picture_G_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Picture_G_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Picture_G_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Picture_G_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Picture_G_Rom'...
+generate_target: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 3541.922 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all Picture_G_Rom] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Picture_G_Rom, cache-ID = 6f39ea098c6064ad; cache size = 2.268 MB.
+catch { [ delete_ip_run [get_ips -all Picture_G_Rom] ] }
+INFO: [Project 1-386] Moving file 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci' from fileset 'Picture_G_Rom' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci'
+export_simulation -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {40000} CONFIG.Coe_File {C:/Users/Fanxin_meng/Desktop/200.coe}] [get_ips Picture_B_Rom]
+generate_target all [get_files  D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Picture_B_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Picture_B_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Picture_B_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Picture_B_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Picture_B_Rom'...
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3541.922 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all Picture_B_Rom] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Picture_B_Rom, cache-ID = 6f39ea098c6064ad; cache size = 2.268 MB.
+catch { [ delete_ip_run [get_ips -all Picture_B_Rom] ] }
+INFO: [Project 1-386] Moving file 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' from fileset 'Picture_B_Rom' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci'
+export_simulation -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+[Fri Jul 24 16:00:37 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 16:00:37 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {10000} CONFIG.Coe_File {C:/Users/Fanxin_meng/Desktop/Xilinx.coe}] [get_ips Picture_R_Rom]
+generate_target all [get_files  D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Picture_R_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Picture_R_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Picture_R_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Picture_R_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Picture_R_Rom'...
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3541.922 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all Picture_R_Rom] }
+export_ip_user_files -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.xci] -no_script -sync -force -quiet
+reset_run Picture_R_Rom_synth_1
+launch_runs -jobs 4 Picture_R_Rom_synth_1
+[Fri Jul 24 16:10:46 2020] Launched Picture_R_Rom_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_R_Rom_synth_1/runme.log
+export_simulation -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {10000} CONFIG.Coe_File {C:/Users/Fanxin_meng/Desktop/Xilinx.coe}] [get_ips Picture_G_Rom]
+generate_target all [get_files  D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Picture_G_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Picture_G_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Picture_G_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Picture_G_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Picture_G_Rom'...
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3541.922 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all Picture_G_Rom] }
+export_ip_user_files -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci]
+launch_runs -jobs 4 Picture_G_Rom_synth_1
+[Fri Jul 24 16:11:45 2020] Launched Picture_G_Rom_synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_G_Rom_synth_1/runme.log
+export_simulation -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {10000} CONFIG.Coe_File {C:/Users/Fanxin_meng/Desktop/Xilinx.coe}] [get_ips Picture_B_Rom]
+generate_target all [get_files  D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Picture_B_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Picture_B_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Picture_B_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Picture_B_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Picture_B_Rom'...
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3541.922 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all Picture_B_Rom] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Picture_B_Rom, cache-ID = 73d319c7ab194b46; cache size = 2.489 MB.
+export_ip_user_files -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci'
+export_simulation -of_objects [get_files D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci] -directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files -ipstatic_source_dir D:/verilog_docs/HDMI_Demo/HDMI_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/modelsim} {questa=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/questa} {riviera=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/riviera} {activehdl=D:/verilog_docs/HDMI_Demo/HDMI_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+[Fri Jul 24 16:13:18 2020] Launched Picture_G_Rom_synth_1, synth_1...
+Run output will be captured here:
+Picture_G_Rom_synth_1: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/Picture_G_Rom_synth_1/runme.log
+synth_1: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 16:13:18 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+[Fri Jul 24 16:29:49 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 16:29:49 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+[Fri Jul 24 17:00:40 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tfgg484-2
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.dcp' for cell 'clk_10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0.dcp' for cell 'rgb2dvi'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.dcp' for cell 'Video_Generator0/B_ROM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom.dcp' for cell 'Video_Generator0/G_ROM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom.dcp' for cell 'Video_Generator0/R_ROM'
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xdc] for cell 'clk_10/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xdc] for cell 'clk_10/inst'
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Parsing XDC File [D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/hdmi.xdc]
+Finished Parsing XDC File [D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/hdmi.xdc]
+Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [d:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3580.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+place_ports {key[0]} M13
+place_ports {key[1]} K14
+place_ports {key[2]} K13
+set_property IOSTANDARD LVCMOS18 [get_ports [list {key[2]} {key[1]} {key[0]}]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3655.730 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.089 . Memory (MB): peak = 3668.801 ; gain = 13.070
+[Fri Jul 24 17:02:47 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 18:03:19 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 18:03:19 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 18:13:38 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 18:13:38 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 18:19:43 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 18:19:43 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 18:34:51 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 18:34:51 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 18:37:44 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 18:37:44 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 18:50:02 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 18:50:03 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 18:53:34 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 18:53:34 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 18:59:09 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 18:59:09 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 19:09:05 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 19:09:05 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 19:16:45 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 19:16:45 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 19:22:50 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 19:22:50 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 19:31:31 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 19:31:32 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 19:38:54 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 19:38:54 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 19:45:38 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 19:45:38 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 19:53:03 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 19:53:03 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 20:01:36 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 20:01:36 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 20:07:12 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 20:07:12 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 20:11:35 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 20:11:35 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 20:18:52 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 20:18:52 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 24 20:23:38 2020] Launched synth_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 24 20:23:38 2020] Launched impl_1...
+Run output will be captured here: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/impl_1/Lab_10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 24 20:41:05 2020...

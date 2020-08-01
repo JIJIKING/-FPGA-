@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jul 27 14:38:29 2020
+# Process ID: 5668
+# Current directory: D:/verilog_docs/HDMI_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16908 D:\verilog_docs\HDMI_Demo\HDMI_Demo.xpr
+# Log file: D:/verilog_docs/HDMI_Demo/vivado.log
+# Journal file: D:/verilog_docs/HDMI_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verilog_docs/HDMI_Demo/HDMI_Demo.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/Fanxin_meng/Desktop/Xilinx.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/RGB2DVI_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/FPGA_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'd:/verilog_docs/RGB2DVI_IP' will take precedence over the same IP in location d:/verilog_docs/FPGA_IP/Mini-HDMI-IP/IP/RGB2DVI_IP
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 976.777 ; gain = 88.664
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget

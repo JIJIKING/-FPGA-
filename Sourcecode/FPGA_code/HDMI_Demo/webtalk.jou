@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jul 24 15:39:59 2020
+# Process ID: 9488
+# Current directory: d:/verilog_docs/HDMI_Demo
+# Command line: wbtcv.exe -mode batch -source D:/verilog_docs/HDMI_Demo/HDMI_Demo.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: d:/verilog_docs/HDMI_Demo/webtalk.log
+# Journal file: d:/verilog_docs/HDMI_Demo\webtalk.jou
+#-----------------------------------------------------------
+source D:/verilog_docs/HDMI_Demo/HDMI_Demo.hw/webtalk/labtool_webtalk.tcl -notrace

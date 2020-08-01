@@ -1,0 +1,7 @@
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_Tx_Data_P[2]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_Tx_Data_P[1]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_Tx_Data_P[0]}]
+set_property IOSTANDARD TMDS_33 [get_ports TMDS_Tx_Clk_P]
+set_property IOSTANDARD LVCMOS18 [get_ports clk_100MHz]
+set_property PACKAGE_PIN E1 [get_ports TMDS_Tx_Clk_P]
+set_property PACKAGE_PIN H4 [get_ports clk_100MHz]

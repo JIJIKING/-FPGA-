@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jul 27 14:38:29 2020
+# Process ID: 5668
+# Current directory: D:/verilog_docs/HDMI_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16908 D:\verilog_docs\HDMI_Demo\HDMI_Demo.xpr
+# Log file: D:/verilog_docs/HDMI_Demo/vivado.log
+# Journal file: D:/verilog_docs/HDMI_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verilog_docs/HDMI_Demo/HDMI_Demo.xpr
+update_compile_order -fileset sources_1

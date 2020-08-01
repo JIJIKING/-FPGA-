@@ -1,0 +1,151 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 5668
+License: Customer
+
+Current time: 	Mon Jul 27 14:38:41 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 18 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/xilinx_2019/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/xilinx_2019/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Fanxin_meng
+User home directory: C:/Users/Fanxin_meng
+User working directory: D:/verilog_docs/HDMI_Demo
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/xilinx_2019/Vivado
+HDI_APPROOT: D:/xilinx_2019/Vivado/2019.1
+RDI_DATADIR: D:/xilinx_2019/Vivado/2019.1/data
+RDI_BINDIR: D:/xilinx_2019/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/Fanxin_meng/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/Fanxin_meng/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/Fanxin_meng/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/xilinx_2019/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/verilog_docs/HDMI_Demo/vivado.log
+Vivado journal file location: 	D:/verilog_docs/HDMI_Demo/vivado.jou
+Engine tmp dir: 	D:/verilog_docs/HDMI_Demo/.Xil/Vivado-5668-LAPTOP-6PEOUARA
+
+Xilinx Environment Variables
+----------------------------
+INTELFPGAOCLSDKROOT: D:\programs\intelFPGA18.1\hld
+XILINX: D:/xilinx_2019/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: D:\xilinx_2019
+XILINX_DSP: D:/xilinx_2019/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/xilinx_2019/Vivado/2019.1
+XILINX_SDK: D:/xilinx_2019/SDK/2019.1
+XILINX_VIVADO: D:/xilinx_2019/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/xilinx_2019/Vivado/2019.1
+
+
+GUI allocated memory:	384 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 734 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 108 MB (+110982kb) [00:00:07]
+// [Engine Memory]: 652 MB (+532711kb) [00:00:07]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: D:\verilog_docs\HDMI_Demo\HDMI_Demo.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/verilog_docs/HDMI_Demo/HDMI_Demo.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 743 MB. GUI used memory: 47 MB. Current time: 7/27/20, 2:38:44 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 770 MB (+89402kb) [00:00:13]
+// [Engine Memory]: 823 MB (+14604kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  3698 ms.
+// Tcl Message: open_project D:/verilog_docs/HDMI_Demo/HDMI_Demo.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/RGB2DVI_IP'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/verilog_docs/FPGA_IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2019/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 976.777 ; gain = 88.664 
+// Project name: HDMI_Demo; location: D:/verilog_docs/HDMI_Demo; part: xc7a35tfgg484-2
+dismissDialog("Open Project"); // by (cl)
+// [GUI Memory]: 120 MB (+6655kb) [00:00:19]
+// a (cl): Critical Messages: addNotify
+// [Engine Memory]: 888 MB (+24788kb) [00:00:20]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab_10 (lab_9_top.v)]", 1); // B (F, cl)
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az (aK, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab_10 (lab_9_top.v), Video_Generator0 : Video_Generator (Video_Generator.v)]", 5); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 11); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 16); // B (F, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 892 MB. GUI used memory: 62 MB. Current time: 7/27/20, 3:08:44 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 892 MB. GUI used memory: 58 MB. Current time: 7/27/20, 3:38:44 PM CST
+// Elapsed time: 4223 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab_10 (lab_9_top.v), Video_Generator0 : Video_Generator (Video_Generator.v), R_ROM : Picture_R_Rom (Picture_R_Rom.xci)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab_10 (lab_9_top.v), Video_Generator0 : Video_Generator (Video_Generator.v), R_ROM : Picture_R_Rom (Picture_R_Rom.xci)]", 6, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// r (cl): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+setFileChooser("C:/Users/Fanxin_meng/Desktop/SEU_Picture_R_Rom.coe");
+// WARNING: HEventQueue.dispatchEvent() is taking  1640 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 987 MB. GUI used memory: 120 MB. Current time: 7/27/20, 3:49:45 PM CST
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// [Engine Memory]: 987 MB (+57541kb) [01:11:30]
+// I (r): Error Found: addNotify
+selectButton(PAResourceAtoD.CustomizeErrorDialog_OK, "OK"); // a (I)
+dismissDialog("Error Found"); // I (r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)

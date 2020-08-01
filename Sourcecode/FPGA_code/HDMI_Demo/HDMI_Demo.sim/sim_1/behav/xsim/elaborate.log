@@ -1,0 +1,14 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx_2019/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ca343cc225fa4eef8dfa41b7020fc365 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_tb_behav xil_defaultlib.TOP_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'arst_n' [D:/verilog_docs/lab_9_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'Rst' [D:/verilog_docs/lab_9_top.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'Video_Mode' [D:/verilog_docs/lab_9_top.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/imports/verilog_docs/Video_Generator.v:814]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'douta' [D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/imports/verilog_docs/Video_Generator.v:816]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/imports/verilog_docs/Video_Generator.v:821]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'douta' [D:/verilog_docs/HDMI_Demo/HDMI_Demo.srcs/sources_1/imports/verilog_docs/Video_Generator.v:823]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

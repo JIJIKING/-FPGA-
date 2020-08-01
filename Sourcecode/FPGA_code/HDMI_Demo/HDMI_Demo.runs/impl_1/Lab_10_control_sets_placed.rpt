@@ -1,0 +1,102 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Aug  1 16:35:51 2020
+| Host         : LAPTOP-6PEOUARA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Lab_10_control_sets_placed.rpt
+| Design       : Lab_10
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    24 |
+|    Minimum number of control sets                        |    24 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   130 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    24 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     9 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             149 |           52 |
+| No           | No                    | Yes                    |              71 |           24 |
+| No           | Yes                   | No                     |              42 |           15 |
+| Yes          | No                    | No                     |              96 |           34 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              24 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+----------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|       Clock Signal       |           Enable Signal          |                                Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++--------------------------+----------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|  Video_Generator0/win_00 |                                  |                                                                               |                1 |              1 |
+|  clk_100MHz_IBUF_BUFG    | Video_Generator0/key_left_10     | Video_Generator0/key_left_120_out                                             |                1 |              1 |
+|  clk_100MHz_IBUF_BUFG    | Driver_HDMI0/key_right_1         | Video_Generator0/key_right_122_out                                            |                1 |              1 |
+|  clk_100MHz_IBUF_BUFG    | Driver_HDMI0/key_down_1          | Video_Generator0/key_down_126_out                                             |                1 |              1 |
+|  clk_100MHz_IBUF_BUFG    | Driver_HDMI0/key_up_1            | Video_Generator0/key_up_124_out                                               |                1 |              1 |
+|  clk_10/inst/clk_out1    |                                  | rgb2dvi/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  clk_10/inst/clk_out1    |                                  | rgb2dvi/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              4 |
+| ~clk_100MHz_IBUF_BUFG    | Video_Generator0/x_police_0      |                                                                               |                4 |             10 |
+| ~clk_100MHz_IBUF_BUFG    | Video_Generator0/x_police_1      |                                                                               |                4 |             10 |
+| ~clk_100MHz_IBUF_BUFG    | Video_Generator0/x_police_2      |                                                                               |                4 |             10 |
+| ~clk_100MHz_IBUF_BUFG    | Video_Generator0/x_thief         | Video_Generator0/endgame                                                      |                4 |             10 |
+| ~clk_100MHz_IBUF_BUFG    | Video_Generator0/y_police_1      |                                                                               |                4 |             10 |
+| ~clk_100MHz_IBUF_BUFG    | Video_Generator0/y_police_0      |                                                                               |                4 |             10 |
+| ~clk_100MHz_IBUF_BUFG    | Video_Generator0/y_police_2      |                                                                               |                4 |             10 |
+| ~clk_100MHz_IBUF_BUFG    | Video_Generator0/y_thief         | Video_Generator0/endgame                                                      |                4 |             10 |
+|  clk_10/inst/clk_out1    |                                  | rgb2dvi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                3 |             10 |
+|  clk_100MHz_IBUF_BUFG    |                                  |                                                                               |                6 |             12 |
+|  clk_10/inst/clk_out1    | Driver_HDMI0/O17[0]              |                                                                               |                3 |             12 |
+|  clk_10/inst/clk_out1    | Driver_HDMI0/Set_X0_carry__0_n_2 |                                                                               |                4 |             12 |
+|  clk_10/inst/clk_out1    | Driver_HDMI0/VSync_Cnt0          |                                                                               |                3 |             12 |
+|  Driver_HDMI0/E[0]       |                                  |                                                                               |                5 |             18 |
+|  clk_10/inst/clk_out1    |                                  | rgb2dvi/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               12 |             32 |
+|  clk_100MHz_IBUF_BUFG    |                                  | Video_Generator0/cnt2[20]_i_2_n_0                                             |               22 |             65 |
+|  clk_10/inst/clk_out1    |                                  |                                                                               |               40 |            118 |
++--------------------------+----------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+
+

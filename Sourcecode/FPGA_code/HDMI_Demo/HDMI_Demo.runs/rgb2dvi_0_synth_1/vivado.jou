@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jul 24 13:50:13 2020
+# Process ID: 5180
+# Current directory: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/rgb2dvi_0_synth_1
+# Command line: vivado.exe -log rgb2dvi_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2dvi_0.tcl
+# Log file: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/rgb2dvi_0_synth_1/rgb2dvi_0.vds
+# Journal file: D:/verilog_docs/HDMI_Demo/HDMI_Demo.runs/rgb2dvi_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rgb2dvi_0.tcl -notrace
