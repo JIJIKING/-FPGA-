@@ -7,7 +7,6 @@
 
 
 
-[TOC]
 
 ------
 
@@ -44,7 +43,7 @@ HDMI通信协议，显示驱动，与arduino通信，IP核的调用与封装，v
 
 ## 作品展示图片
 
-![1](C:\Users\JJKING\Desktop\FPGA\-FPGA-\images\1.png)
+![1](https://github.com/JIJIKING/-FPGA-/blob/master/images/1.png)
 
 
 
