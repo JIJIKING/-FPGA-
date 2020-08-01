@@ -63,4 +63,4 @@ HDMI通信协议，显示驱动，与arduino通信，IP核的调用与封装，v
 
 ### 2、项目系统框图
 
-![2](C:\Users\JJKING\Desktop\FPGA\-FPGA-\images\2.png)
+![2](https://github.com/JIJIKING/-FPGA-/blob/master/images/2.png)
